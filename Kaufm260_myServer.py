@@ -49,6 +49,8 @@ class myServer:
         if requestType == 'GET':
             if urlContent == 404:
                 print "HTTP/1.1 404 NOT FOUND\n"
+                readUrl = open('404.html', 'r')
+                urlContent = readUrl.read(16384)
                 http_response = """\
 HTTP/1.1 404 NOT FOUND
 
@@ -57,6 +59,8 @@ HTTP/1.1 404 NOT FOUND
 
             elif urlContent == 403:
                 print "HTTP/1.1 403 FORBIDDEN\n"
+                readUrl = open('403.html', 'r')
+                urlContent = readUrl.read(16384)
                 http_response = """\
 HTTP/1.1 403 FORBIDDEN
 
@@ -83,12 +87,16 @@ HTTP/1.1 200 OK
         elif requestType == 'HEAD':
             if urlContent == 404:
                 print "HTTP/1.1 404 NOT FOUND\n"
+                readUrl = open('404.html', 'r')
+                urlContent = readUrl.read(16384)
                 http_response = """\
 HTTP/1.1 404 NOT FOUND
 """
 
             elif urlContent == 403:
                 print "HTTP/1.1 403 FORBIDDEN\n"
+                readUrl = open('403.html', 'r')
+                urlContent = readUrl.read(16384)
                 http_response = """\
 HTTP/1.1 403 FORBIDDEN
 """
