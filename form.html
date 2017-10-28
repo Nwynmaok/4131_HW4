@@ -1,0 +1,74 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <Title>Calendar Input</Title>
+
+</head>
+
+<body>
+  <h1>Calendar Input</h1>
+  <div class="menu">
+    <nav>
+      <a href="calendar.html">My Calendar</a>
+      <a href="form.html">Form Input</a>
+    </nav>
+  </div>
+  <br>
+  <form action="http://localhost:9001" method="post">
+    <div class="form">
+      <table>
+        <tr>
+          <th>Event Name:</th>
+          <th>
+            <input type="text" name = "eventname" placeholder="">
+          </th>
+        </tr>
+        <tr>
+          <th>Day of the week:</th>
+          <th>
+            <select name="day">
+              <option value="Monday">Monday</option>
+              <option value="Monday">Tuesday</option>
+              <option value="Monday">Wednesday</option>
+              <option value="Monday">Thursday</option>
+              <option value="Monday">Friday</option>
+              <option value="Monday">Saturday</option>
+              <option value="Monday">Sunday</option>
+            </select>
+          </th>
+        </tr>
+        <tr>
+          <th>Start Time:</th>
+          <th>
+            <input type="time" name = "starttime">
+          </th>
+        </tr>
+        <tr>
+          <th>End Time:</th>
+          <th>
+            <input type="time" name = "endtime">
+          </th>
+        </tr>
+        <tr>
+          <th>Location:</th>
+          <th>
+            <input type="text" name = "location" placeholder="">
+          </th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>
+            <input type = "submit" value = "Submit">
+          </th>
+        </tr>
+      </table>
+    </div>
+  </form>
+  <footer>
+    <br>
+    Tested in Chrome and Firefox
+  </footer>
+</body>
+</html>

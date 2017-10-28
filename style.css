@@ -1,0 +1,92 @@
+h1 {
+  text-align: center;
+}
+
+.menu {
+  background-color: #800000;
+  text-align : center;
+  width:100%;
+}
+
+.menu a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.menu a:link{
+  font-size: 26px;
+  color: white;
+}
+
+.menu a:visited {
+  font-size: 26px;
+  color: yellow;
+}
+
+.form table {
+  margin: auto;
+  width: 60%;
+  text-align: right;
+}
+
+body {
+    margin: 0;
+}
+
+.container1 {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.item1 {
+    background-color: lightyellow;
+    height: 100%;
+    width: 100%;
+    line-height: 5px;
+    color:#800000;;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.item1 h2 {
+  left: 20px;
+  top: 20px;
+  position: relative;
+}
+
+.item2 {
+  background-color: gold;
+  width: 20%;
+  height: 180px;
+
+  font-size: 1em;
+  padding-top: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.item2 th {
+  font-weight: bold;
+  font-size: 1.5em;
+  border-right: 5px solid #800000;
+}
+
+.item3 {
+  width: 20%;
+  height: 180px;
+
+  font-size: 1em;
+  padding-top: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.item3 th {
+  font-weight: bold;
+  font-size: 1.5em;
+  border-right: 5px solid #800000;
+}
+
+.time {
+  font-style: italic;
+}
